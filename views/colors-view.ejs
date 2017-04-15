@@ -1,0 +1,16 @@
+    <h2> Colors</h2>
+    <p> Voila your colors</p>
+          <% mycolors.forEach((oneColor)=>{ %>
+            <div class="square-holder">
+              <div class="square"  style="background-color:<%= oneColor.hex %>;">
+                <!-- <div class="foo blue">
+                </div> -->
+              </div>
+                <div class="my-text">
+                  <ul><%= oneColor.keyword %></ul>
+                  <ul><%= oneColor.hex %>
+                  <%= oneColor.category %></ul>
+              </div>
+          </div>
+
+          <% }) %>

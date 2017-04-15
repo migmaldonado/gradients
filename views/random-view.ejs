@@ -1,0 +1,14 @@
+    <h2> Colors</h2>
+    <p> Voila your purple colors</p>
+        <% var randomColor=mycolors[Math.floor(mycolors.length*Math.random() )]; %>
+            <div class="square-holder">
+              <div class="square"  style="background-color:<%= randomColor.hex %>;">
+                <!-- <div class="foo blue">
+                </div> -->
+              </div>
+                <div class="my-text">
+                  <ul><%= randomColor.keyword %></ul>
+                  <ul><%= randomColor.hex %>
+                  <%= randomColor.category %></ul>
+              </div>
+          </div>
